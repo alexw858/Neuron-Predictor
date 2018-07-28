@@ -6,20 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Templates 101</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/css/main.css') }}" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">TITLE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">About the brain?</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Views
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="">view 1</a>
+                <a class="dropdown-item" href="">view 2</a>
+                <a class="dropdown-item" href="">view 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div class="jumbotron text-center">
-      
-      <!-- Add Welcome message with name and hobby served from backend -->
-      <h1>project</h1>
+    <!-- Page Content -->
+    <div class="container">
 
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Mapping the Brain
+        <small>Subheading</small>
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="">Brain science</a>
+        </li>
+        <li class="breadcrumb-item active">Data</li>
+      </ol>
+
+      <canvas id="scene"></canvas>
+
+      <!-- Content Row -->
+      <div class="row">
+        <!-- Map Column -->
+        <div class="col-lg-8 mb-4">
+          <!-- Embedded Google Map -->
+          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        </div>
+        <!-- Contact Details Column -->
+        <div class="col-lg-4 mb-4">
+          <h3>Details</h3>
+          <p>
+            <br>very interesting stuff
+            <br>
+          </p>
+          <p>
+            <abbr title="info 1">A</abbr>: bla bla bla
+          </p>
+          <p>
+            <abbr title="info 2">B</abbr>:
+            <a href="">examples of data
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <h3>more details! seach inputs maybe?</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Brain cell number to search:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="you are so dumb.">
+              </div>
+            <div id="success"></div>
+            <br>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">search</button>
+          </form>
+        </div>
+      </div>
+      <!-- /.row -->
     </div>
-    
-  </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; If you steal this I will...</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  <script src="{{ url_for('static', filename='js/three.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/OBJLoader.js') }}"></script>
+
+  <script src="{{ url_for('static', filename='js/brain.js') }}"></script>
 </body>
 
 </html>
