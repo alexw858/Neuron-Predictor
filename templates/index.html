@@ -12,7 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='css/css/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
 
 </head>
 
@@ -43,6 +43,8 @@
       </div>
     </nav>
 
+    <div id="scene"></div>
+
     <!-- Page Content -->
     <div class="container">
 
@@ -58,7 +60,6 @@
         <li class="breadcrumb-item active">Data</li>
       </ol>
 
-      <canvas id="scene"></canvas>
 
       <!-- Content Row -->
       <div class="row">
@@ -118,8 +119,10 @@
 
   <script src="{{ url_for('static', filename='js/three.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/OBJLoader.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/Detector.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/stats.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/brain2.js') }}"></script>
 
-  <script src="{{ url_for('static', filename='js/brain.js') }}"></script>
 </body>
 
 </html>
