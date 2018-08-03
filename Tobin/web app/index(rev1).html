@@ -87,41 +87,21 @@
       </div>
       <!-- /.row -->
 
-      <!---->
-      <!-- -->
+      <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
         <div class="col-lg-8 mb-4">
-          <h3>seach inputs</h3>
-          <form name="sentMessage" id="inputForm" novalidate>
-            <div class="float-left">
+          <h3>more details! seach inputs maybe?</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
               <div class="controls">
-                <label>input_resistance value (between -191.1 and 1435.0):</label>
-                <input type="float" class="form-control" id="one" required data-validation-required-message="you are so dumb.">
-              </div>
-              <div class="controls">
-                <label>resting_membrane_potential value (between -95.3 and 88.7):</label>
-                <input type="float" class="form-control" id="two" required data-validation-required-message="you are so dumb.">
-              </div>
-              <div class="controls">
-                <label>spike_threshold value (between -63.5 and 763.0):</label>
-                <input type="float" class="form-control" id="three" required data-validation-required-message="you are so dumb.">
-              </div>
-              <div class="controls">
-                <label>spike_half-width value (between 0.19 and 810.0):</label>
-                <input type="float" class="form-control" id="four" required data-validation-required-message="you are so dumb.">
-              </div>
-              <div class="controls">
-                <label>spike_amplitude value (between -7.21 and 116.9):</label>
-                <input type="float" class="form-control" id="five" required data-validation-required-message="you are so dumb.">
-              </div>
-              <div class="controls">
-                <label>membrane_time_constant value (between -38.0 and 283.0):</label>
-                <input type="float" class="form-control" id="six" required data-validation-required-message="you are so dumb.">
+                <label>Brain cell number to search:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="you are so dumb.">
               </div>
             <div id="success"></div>
             <br>
-            <!-- -->
-            <button type="submit" class="btn btn-primary" id="inputsubmit">search</button>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">search</button>
           </form>
         </div>
       </div>
@@ -144,17 +124,8 @@
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/input.js"></script>
+    
 
   </body>
 
 </html>
-
-
-
-input_resistance value (between -191.1 and 1435.0): 100
-resting_membrane_potential value (between -95.3 and 88.7): 28
-spike_threshold value (between -63.5 and 763.0): -64
-spike_half-width value (between 0.19 and 810.0): 85
-spike_amplitude value (between -7.21 and 116.9): 1.6
-membrane_time_constant value (between -38.0 and 283.0): 51
