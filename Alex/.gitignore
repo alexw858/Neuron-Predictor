@@ -1,0 +1,6 @@
+# Random forest model
+machine_learning3_forest.sav
+# Gradient boosting model
+machine_learning3_gradboost.sav
+# Sequential neural network model
+machine_learning3_seq.h5
