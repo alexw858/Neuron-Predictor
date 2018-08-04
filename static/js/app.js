@@ -4,7 +4,7 @@ var update = '';
 setInterval(()=>{
     cell = $("#iframe").contents().find("#cell").text()
 
-    if (cell !=update) {
+    if (cell != '' && cell != update) {
         rotation_x = Math.floor(Math.random()*10)/10
         rotation_y = Math.floor(Math.random()*10)/10
         rotation_z = Math.floor(Math.random()*10)/10
