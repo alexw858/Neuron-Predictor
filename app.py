@@ -30,10 +30,10 @@ def post():
             return '''
                     <form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="text" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="text" name="input3" placeholder="-100 - 100"><br>
+                  Membrane time constant: <input type="text" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrane potential: <input type="text" name="input3" placeholder="-100 - 100"><br>
                   Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="text" name="input5" placeholder="0 - 970"><br>
+                  Spike half-width: <input type="text" name="input5" placeholder="0 - 970"><br>
                   Spike threshold: <input type="text" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
