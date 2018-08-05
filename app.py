@@ -2,7 +2,8 @@
 from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
-
+# for detailed error messages
+import logging
 # create instance of Flask app
 app = Flask(__name__)
 
@@ -85,6 +86,8 @@ def post():
               </form>'''
 
 
-
 if __name__ == "__main__":
     app.run(debug=True)
+
+# if error occurs display detailed message
+logging.getLogger().addHandler(logging.StreamHandler())
