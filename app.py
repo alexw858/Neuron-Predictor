@@ -30,10 +30,10 @@ def post():
             return '''
                     <form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
+                  Membrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrane potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
                   Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="float" name="input5" placeholder="0 - 970"><br>
+                  Spike half-width: <input type="float" name="input5" placeholder="0 - 970"><br>
                   Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
@@ -43,13 +43,13 @@ def post():
 
 
         filename = 'model/machine_learning3_gradboost.sav'
-        forest_model = pickle.load(open(filename, 'rb'))
+        model = pickle.load(open(filename, 'rb'))
 
         # user_data = np.array([ 40., 200.,  80.,  10., 500., -40.])
         user_data = np.array([ input1, input2,  input3,  input4, input5, input6])
 
-        prediction = forest_model.predict(np.array([user_data]))
-        output = {"predictions": prediction, "probability": round(forest_model.predict_proba(user_data.reshape(1, -1)).max()*100,2)}
+        prediction = model.predict(np.array([user_data]))
+        output = {"predictions": prediction, "probability": round(model.predict_proba(user_data.reshape(1, -1)).max()*100,2)}
 
         print('prediction')
         cell = output['predictions'][0]
@@ -61,10 +61,10 @@ def post():
         return '''
                   <form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
+                  Membrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrane potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
                   Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="float" name="input5" placeholder="0 - 970"><br>
+                  Spike half-width: <input type="float" name="input5" placeholder="0 - 970"><br>
                   Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
@@ -75,10 +75,10 @@ def post():
 
     return '''<form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
+                  Membrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrane potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
                   Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="float" name="input5" placeholder="0 - 970"><br>
+                  Spike half-width: <input type="float" name="input5" placeholder="0 - 970"><br>
                   Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
