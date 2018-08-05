@@ -30,11 +30,11 @@ def post():
             return '''
                     <form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="text" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="text" name="input3" placeholder="-100 - 100"><br>
-                  Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="text" name="input5" placeholder="0 - 970"><br>
-                  Spike threshold: <input type="text" name="input6" placeholder="-70 - 760"><br>
+                  Memnbrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrance potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
+                  Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
+                  Spike halfwidth: <input type="float" name="input5" placeholder="0 - 970"><br>
+                  Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
               </form>
@@ -61,11 +61,11 @@ def post():
         return '''
                   <form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="text" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="text" name="input3" placeholder="-100 - 100"><br>
-                  Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="text" name="input5" placeholder="0 - 970"><br>
-                  Spike threshold: <input type="text" name="input6" placeholder="-70 - 760"><br>
+                  Memnbrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrance potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
+                  Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
+                  Spike halfwidth: <input type="float" name="input5" placeholder="0 - 970"><br>
+                  Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
               </form>
@@ -75,11 +75,11 @@ def post():
 
     return '''<form method="POST">
                   Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Memnbrane time constant: <input type="text" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrance potential: <input type="text" name="input3" placeholder="-100 - 100"><br>
-                  Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120"><br>
-                  Spike halfwidth: <input type="text" name="input5" placeholder="0 - 970"><br>
-                  Spike threshold: <input type="text" name="input6" placeholder="-70 - 760"><br>
+                  Memnbrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
+                  Resting membrance potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
+                  Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
+                  Spike halfwidth: <input type="float" name="input5" placeholder="0 - 970"><br>
+                  Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
 
                   <input type="submit" value="Submit"><br>
               </form>'''
