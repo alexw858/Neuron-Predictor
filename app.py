@@ -30,17 +30,28 @@ def post():
         except:
             return '''
                     <form method="POST">
-                  Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Membrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrane potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
-                  Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
-                  Spike half-width: <input type="float" name="input5" placeholder="0 - 970"><br>
-                  Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
+                        <p style='margin: 10px'>
+                            Input resistance: <input type="text" name="input1" placeholder="-200 - 1600">
+                        </p>
+                        <p style='margin: 10px'>
+                            Membrane time constant: <input type="text" name="input2" placeholder="-40 - 280">
+                        </p>
+                        <p style='margin: 10px'>
+                            Resting membrane potential: <input type="text" name="input3" placeholder="-100 - 100">
+                        </p>
+                        <p style='margin: 10px'>
+                            Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120">
+                        </p>
+                        <p style='margin: 10px'>
+                            Spike half-width: <input type="text" name="input5" placeholder="0 - 970">
+                        </p>
+                        <p style='margin: 10px'>
+                            Spike threshold: <input type="text" name="input6" placeholder="-70 - 760">
+                        </p>
 
-                  <input type="submit" value="Submit"><br>
-              </form>
-                                  <p>enter a valid number</p>
-                    '''
+                        <button type="submit" >Submit</button>
+                    </form>
+                    <p>Please enter a valid number</p>'''
 
 
         filename = 'model/machine_learning3_gradboost.sav'
@@ -60,30 +71,54 @@ def post():
 
 
         return '''
-                  <form method="POST">
-                  Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Membrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrane potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
-                  Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
-                  Spike half-width: <input type="float" name="input5" placeholder="0 - 970"><br>
-                  Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
+                <form method="POST">
+                    <p style='margin: 10px'>
+                        Input resistance: <input type="text" name="input1" placeholder="-200 - 1600">
+                    </p>
+                    <p style='margin: 10px'>
+                        Membrane time constant: <input type="text" name="input2" placeholder="-40 - 280">
+                    </p>
+                    <p style='margin: 10px'>
+                        Resting membrane potential: <input type="text" name="input3" placeholder="-100 - 100">
+                    </p>
+                    <p style='margin: 10px'>
+                        Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120">
+                    </p>
+                    <p style='margin: 10px'>
+                        Spike half-width: <input type="text" name="input5" placeholder="0 - 970">
+                    </p>
+                    <p style='margin: 10px'>
+                        Spike threshold: <input type="text" name="input6" placeholder="-70 - 760">
+                    </p>
 
-                  <input type="submit" value="Submit"><br>
-              </form>
-              <h1 id='cell' >Cell: {}</h1>
-                  <h1 id='prob' >Probability: {}</h1>
-                  '''.format(cell, probability)
+                    <button type="submit" >Submit</button>
+                </form>
+                <h3 id='cell' >Cell: {}</h3>
+                <h3 id='prob' >Probability: {}%</h3>'''.format(cell, probability)
 
-    return '''<form method="POST">
-                  Input resistance: <input type="float" name="input1" placeholder="-200 - 1600"><br>
-                  Membrane time constant: <input type="float" name="input2" placeholder="-40 - 280"><br>
-                  Resting membrane potential: <input type="float" name="input3" placeholder="-100 - 100"><br>
-                  Spike amplitude: <input type="float" name="input4" placeholder="-70 - 120"><br>
-                  Spike half-width: <input type="float" name="input5" placeholder="0 - 970"><br>
-                  Spike threshold: <input type="float" name="input6" placeholder="-70 - 760"><br>
+    return '''
+            <form method="POST">
+                <p style='margin: 10px'>
+                    Input resistance: <input type="text" name="input1" placeholder="-200 - 1600">
+                </p>
+                <p style='margin: 10px'>
+                    Membrane time constant: <input type="text" name="input2" placeholder="-40 - 280">
+                </p>
+                <p style='margin: 10px'>
+                    Resting membrane potential: <input type="text" name="input3" placeholder="-100 - 100">
+                </p>
+                <p style='margin: 10px'>
+                    Spike amplitude: <input type="text" name="input4" placeholder="-70 - 120">
+                </p>
+                <p style='margin: 10px'>
+                    Spike half-width: <input type="text" name="input5" placeholder="0 - 970">
+                </p>
+                <p style='margin: 10px'>
+                    Spike threshold: <input type="text" name="input6" placeholder="-70 - 760">
+                </p>
 
-                  <input type="submit" value="Submit"><br>
-              </form>'''
+                <button type="submit" >Submit</button>
+            </form>'''
 
 
 if __name__ == "__main__":
