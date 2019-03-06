@@ -3,4 +3,4 @@ machine_learning.ipynb
 machine_learning2.ipynb
 machine_learning4.ipynb
 # ignore Jupyter notebook checkpoints folder
-.ipynb_checkpoints
+.ipynb_checkpoints/
