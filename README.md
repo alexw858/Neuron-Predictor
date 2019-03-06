@@ -1,4 +1,4 @@
-# BC_Proj003
+# Neuron-Predictor
 
 ## Project Overview
 
