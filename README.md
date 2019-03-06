@@ -7,11 +7,11 @@ A web application was created using machine learning to train a model on predict
 A Heroku web application was created with this model and can be accessed here: [Neuron Predictor](https://neuron-pred.herokuapp.com/)
 
 The landing page
-<p align="center"> 
+<p align="left"> 
   <img src="https://github.com/alexw858/BC_Proj003/blob/alexBranch/screenshots/neuron_pred_landing_page.png" width="500"/>
  </p>
 
  After entering data into the 6 input fields, the app makes a prediction
- <p align="center"> 
+ <p align="left"> 
   <img src="https://github.com/alexw858/BC_Proj003/blob/alexBranch/screenshots/neuron_pred_output.png" width="500"/>
  </p>
