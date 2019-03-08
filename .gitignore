@@ -1,0 +1,8 @@
+# Ignore Jupyter notebooks that were not part of the final model
+Alex/machine_learning.ipynb
+Alex/machine_learning2.ipynb
+Alex/machine_learning4.ipynb
+# ignore Jupyter notebook checkpoints folder
+Alex/.ipynb_checkpoints/
+# ignore powerpoint
+Project3.pptx

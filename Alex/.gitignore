@@ -1,6 +1,0 @@
-# Ignore Jupyter notebooks that were not part of the final model
-machine_learning.ipynb
-machine_learning2.ipynb
-machine_learning4.ipynb
-# ignore Jupyter notebook checkpoints folder
-.ipynb_checkpoints/
